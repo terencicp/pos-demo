@@ -4,7 +4,7 @@ This is a prototype built for a retail client in Spain. This React app allows sa
 
 [terencicp.github.io/pos-demo](https://terencicp.github.io/pos-demo/)
 
-Use zoom to increase UI size and arrows to navigate back and forth between pages. Note that the final SAVE button does not work yet.
+Use zoom to increase UI size and arrows to navigate back and forth between pages. Note that the final SAVE button currently has not functionality.
 
 ## Features
 
