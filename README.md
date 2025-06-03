@@ -1,68 +1,54 @@
-# POS Demo - Portfolio Showcase
+# Point of sale app prototype
 
-> ⚠️ **Important Notice**: This is a proprietary prototype developed for a client. It is shared with permission for demonstration purposes only. **All rights reserved**
+This is a prototype built for a retail client in Spain. This React app allows salespeople to generate budgets, invoices and returns. You can try the live demo at:
 
-A Point of Sale (POS) system prototype built with React and Vite, featuring budget creation, order management, and document handling.
+[terencicp.github.io/pos-demo](https://terencicp.github.io/pos-demo/)
+
+Use zoom to increase UI size and arrows to navigate back and forth between pages. Note that the final SAVE button does not work yet.
 
 ## Features
 
-- 📊 **Budget Management** - Create and manage customer budgets
-- 🛒 **Order Processing** - Handle orders, returns, and payments
-- 📄 **Document Management** - Generate and track sales documents
-- 🧾 **Payment Processing** - Support for multiple payment methods and refunds
-- 📱 **Responsive Design** - Works on desktop and mobile devices
-- ⌨️ **Keyboard Navigation** - Arrow key navigation between pages
+**Product:**
+- Full-text product search
+- Products can have multiple variations
+- Click on the price to add discounts
 
-## Technologies Used
+**Deliveries:**
+- Products can be split into:
+    - Products collected at the store
+    - Products that will be delivered to the client
 
-- **React 19** - Modern React with latest features
-- **Vite** - Fast build tool and development server
-- **React Router 7** - Client-side routing
-- **Tailwind CSS** - Utility-first CSS framework
-- **Lucide React** - Beautiful icons
-- **Material-UI** - UI components
-- **Fuse.js** - Fuzzy search functionality
+**Form validation**:
+- NIF validation
+- Phone number validation
+- Email validation
+- City full-text search
+- Fields may be mandatory under certain conditions
 
-## Project Structure
+**Payment**:
+- Unfulfilled items can be paid partially
+- Cash is limited to 1000€ by law in spain
 
-```
-src/
-├── client/          # Client form components
-├── context/         # React context and state management
-├── data/            # Static data and utilities
-├── layout/          # Layout components (headers, menus)
-├── navigation/      # Navigation components and hooks
-├── page/            # Page components (budget, order, documents)
-├── product/         # Product-related components
-├── return/          # Return management components
-├── routing/         # Router configuration
-├── splitter/        # List and quantity components
-├── summary/         # Summary and checkout components
-├── transactions/    # Payment and refund components
-└── utils/           # Utility functions
-```
+**Budget**:
+- Switch between order and budget sections at any time
 
-## Usage
+**Returns**:
+- The documents section (unfinished) contains example data to try out the returns flow
 
-1. **Budget Creation**: Navigate to the budget section to create customer quotes
-2. **Order Management**: Process orders, handle returns, and manage payments
-3. **Document Tracking**: View and manage all sales documents
-4. **Keyboard Navigation**: Use arrow keys to navigate between pages quickly
+## Libraries used
 
-## License & Usage Restrictions
+- **React 19**
+- **Vite**
+- **React Router**
+- **Tailwind CSS**
+- **Lucide React**
+- **Material-UI**
+- **Fuse.js**
 
-**Prohibited uses include but are not limited to:**
-- Commercial use
-- Redistribution
-- Modification or derivative works
-- Production deployment
+## Copyright
 
-
-## About This Project
-
-This prototype was developed as part of a client project to demonstrate modern React development practices and POS system functionality. The client has granted permission to showcase this work publicly while retaining all proprietary rights.
+The client has granted permission to showcase this work publicly while retaining all proprietary rights.
 
 ## Contact
 
-For any questions regarding this project or potential collaboration opportunities, please contact me through my GitHub profile.
-
+For any questions regarding this project or potential collaborations, feel free to connect with me on [LinkedIn](https://www.linkedin.com/in/terenci).
