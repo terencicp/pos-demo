@@ -62,7 +62,9 @@ const router = createBrowserRouter([
       },
     ],
   },
-]);
+], {
+  basename: "/pos-demo/",
+});
 
 export default function App() {
   return <RouterProvider router={router} />;
