@@ -34,7 +34,7 @@ export default function SplitterItem({
   const bottomQuantity = quantity - topQuantity;
 
   const arrowButtonStyle = "bg-blue-800 text-white hover:bg-blue-600 border-2 border-blue-800 " +
-                          "inline-flex items-center justify-center rounded-md h-9 w-9";
+                          "inline-flex items-center justify-center rounded-md h-9 w-9 min-w-[36px]";
   const itemStyle = `flex items-center gap-4 p-3 border-2 rounded-md h-[69px] ${
     isInTopList ? 'border-gray-200 bg-white' : 'border-gray-200 bg-gray-50 opacity-90'
   }`;

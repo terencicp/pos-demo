@@ -1,6 +1,6 @@
 import { NavLink } from 'react-router';
 
-export default function MenuItem({ to, children: text }) {
+export default function MenuItem({ to, children: text, onClick }) {
   
   function menuItemCss({ isActive }) {
     const base = "block py-3 px-4 my-2 rounded ";
@@ -11,7 +11,7 @@ export default function MenuItem({ to, children: text }) {
 
   return (
     <li>
-      <NavLink to={to} className={menuItemCss}>{text}</NavLink>
+      <NavLink to={to} className={menuItemCss} onClick={onClick}>{text}</NavLink>
     </li>
   );
 }

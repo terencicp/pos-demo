@@ -155,8 +155,10 @@ export default function PaymentInput({
       })}
     </div>
 
-    <div className={`grid grid-cols-1 gap-x-4 mb-5
-                   ${isReferenceNumberRequired ? 'grid-cols-[1fr_1fr_auto]' : 'grid-cols-[1fr_auto]'}`}>
+    <div className={`grid gap-4 mb-5
+                   ${isReferenceNumberRequired 
+                     ? 'grid-cols-1 md:grid-cols-[1fr_1fr_auto] md:gap-x-4 md:gap-y-0' 
+                     : 'grid-cols-1 md:grid-cols-[1fr_auto] md:gap-x-4 md:gap-y-0'}`}>
 
       {/* Amount input */}
       <div>
@@ -184,10 +186,10 @@ export default function PaymentInput({
       )}
         
       {/* Add payment button */}
-      <div className="self-end pb-[1px]">
+      <div className="md:self-end md:pb-[1px]">
         <button onClick={handleAddPayment}
                 className="w-full bg-blue-800 hover:bg-blue-600 text-white py-2 px-4 rounded-md 
-                           transition duration-150 flex items-center h-[2.65rem] cursor-pointer"
+                           transition duration-150 flex items-center justify-center h-[2.65rem] cursor-pointer"
         >
           Añadir
         </button>

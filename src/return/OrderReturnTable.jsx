@@ -90,7 +90,9 @@ export default function OrderReturnTable() {
   const headerHoverStyles = "hover:text-blue-600 cursor-pointer";
 
   return (<>
-    <div className="rounded border-2 border-gray-300 border-b-0 mt-8">
+    {/* Horizontal scroll container for mobile */}
+    <div className="overflow-x-auto mt-8">
+      <div className="rounded border-2 border-gray-300 border-b-0 min-w-[600px]">
 
       {/* Table header */}
       <div className={`${gridStyles} p-4 bg-gray-100 border-b-2 border-gray-300 text-sm font-semibold`}>
@@ -122,6 +124,7 @@ export default function OrderReturnTable() {
           gridStyles={gridStyles}
         />
       ))}
+      </div>
     </div>
 
     {/* Total */}
